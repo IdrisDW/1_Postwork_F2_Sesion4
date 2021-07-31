@@ -63,7 +63,7 @@ let john = {
 
 function chunk(array, size) {
   let temp = [];
-  for (let i = 0; i < array.length; i = i + size) {
+  for (let i = 0; i < array.length; i += size) {
     let item = array.slice(i, i + size);
     temp.push(item);
   }

@@ -20,11 +20,12 @@ POSTWORK SESION 4 MODULO 2
  Usando el operador typeof puedes determinar si ambas variables son objetos, de ser así se debe llamar nuevamente deepEqual para comparar las propiedades de dichos objetos, en caso contrario solo es necesario revisar si ambas variables son estrictamente iguales.
  La función Object.keys() es útil para obtener las propiedades de los objetos.
 */
-
+      
 
 function deepEqual(a, b) {
-  if (typeof a === "object" && typeof b === "object") {
-    if (Object.keys(a).length === Object.keys(b).length) {
+  let equal;
+  if (typeof a == "object" && typeof b == "object") {
+    if (Object.keys(a).length == Object.keys(b).length) {
       for (let keys in a) {
         equal = deepEqual(a[keys], b[keys]);
         if (equal == false) break;

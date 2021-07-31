@@ -28,7 +28,7 @@ function deepEqual(a, b) {
     if (Object.keys(a).length == Object.keys(b).length) {
       for (let keys in a) {
         equal = deepEqual(a[keys], b[keys]);
-        if (equal == false) break;
+        if (!equal) break; 
       }
     } else {
       equal = false;
@@ -63,7 +63,7 @@ let john = {
 
 function chunk(array, size) {
   let temp = [];
-  for (let i = 0; i < array.length; i += size) {
+  for (let i = 0; i < array.length; i+=size) {
     let item = array.slice(i, i + size);
     temp.push(item);
   }

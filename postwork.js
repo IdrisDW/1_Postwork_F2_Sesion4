@@ -2,7 +2,11 @@
 EQUIPO #1 
 POSTWORK SESION 4 MODULO 2
 
- 
+ Juliet Guadalupe Quintero Rocha
+ Gabriela Aidee Castillo del Valle
+ Lourdes Araceli Garcia Eulogio
+ Karina Lizeth Ortiz Muñoz
+ Marco Antonio Galindez Cortes
 */
 
 
@@ -82,7 +86,7 @@ console.log("Test 3:", chunk(data, 3)); // [[1, 2, 3], [4, 5, 6], [7, 8]]
 function frequency(string) {
   let caracteres = {};
   let ordenado = {}
-  for(var elemento of string){
+  for(let elemento of string){
       if(caracteres.hasOwnProperty(elemento)){
           caracteres[elemento] = caracteres[elemento] +1;
       }
@@ -92,7 +96,7 @@ function frequency(string) {
   }
   //Ordenando
   arrAtributos = Object.keys(caracteres).sort()
-  for(var atributo of arrAtributos){
+  for(let atributo of arrAtributos){
       ordenado[atributo] = caracteres[atributo];
   }
   return ordenado;
